@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(to bottom, #FFF, #9B9999);
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.page {
+    position: relative;
+    width: 100vw;
+}
+
+.header {
+    width: 100vw;
+    background-color: rgba(256, 256, 256, 1);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-bottom: solid 1px #8C0404;
+}
+
+.header img {
+    width: 30vw;
+}
+
+.menu {
+    width: 66vw;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.menu a {
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: #8C0404;
+    text-decoration: none;
+}
+
+.menu>li {
+    display: block;
+    margin: auto;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+._24_7 {
+    width: 100vw;
+    color: #FFF;
+    background-image: linear-gradient(#FA3838, #9F0101);
+    font-weight: bold;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.footer ul {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    font-size: 1vw;
+    padding: 0;
+    color: #CAC4C4;
+}
+
+.contacts {
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 2vw;
+}
+
+.contacts li:first-child {
+    width: 60vw;
+    text-align: left;
+}
+
+.contacts li:first-child>h3,
+.contacts li:last-child>h3{
+    text-align: left;
+}
+
+.contacts li:last-child {
+    width: 30vw;
+}
+
+.contacts i {
+    margin-right: 1vw;
+}
+
+.contacts tr {
+    vertical-align: top;
+}
+
+.contacts img {
+    width: 3vw;
+    margin: auto;
+}
+
+.map {
+    width: 90vw;
+    margin-left: 5vw;
+}
+
+.benefits,
+.partners {
+    width: 90vw;
+}
+
+h3 {
+    font-size: 2vw;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+}
+
+.benefits ul,
+.partners ul {
+    width: 90vw;
+    font-size: 1.3vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 5vw;
+}
+
+.benefits li {
+    display: block;
+    width: 18vw;
+    text-indent: 2vw;
+    text-align: justify;
+    border: solid 1px;
+    padding: 1vw;
+}
+
+.benefits li:hover {
+    transform: scale(1.2);
+}
+
+.partners li {
+    padding: 0.5vw;
+}
+
+.partners img {
+    width: 11vw;
+    height: 4vw;
+}
+
+.end {
+    text-align: center;
+    font-size: 1vw;
+    color: #CAC4C4;
+    background-color: #212121;
+    line-height: 2vw;
+}

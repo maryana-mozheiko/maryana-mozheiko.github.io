@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.page {
+    position: relative;
+    top: 3vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header {
+    width: 100vw;
+    background-color: rgba(256, 256, 256, 1);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-bottom: solid 1px #8C0404;
+}
+
+.header img {
+    width: 30vw;
+}
+
+.menu {
+    width: 66vw;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.menu a {
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: #8C0404;
+    text-decoration: none;
+}
+
+.menu>li {
+    display: block;
+    margin: auto;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.contact {
+    width: 100vw;
+    height: 2.4vw;
+    position: fixed;
+    z-index: 1000;
+    top: 0vw;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #5C5757;
+}
+
+.contact>div {
+    width: 30vw;
+    line-height: 2.4vw;
+    font-size: 1.5vw;
+}
+
+.contact>div:nth-child(1) {
+    font-size: 1vw;
+}
+
+.contact img {
+    width: 1.3vw;
+    height: 1.3vw;
+    margin-right: 1vw;
+}
+
+.beginning {
+    width: 90vw;
+    text-indent: 2vw;
+    text-align: justify;
+    transform: translate(5vw);
+    font-size: 1.5vw;
+}
+
+.items {
+    width: 90vw;
+    list-style-type: none;
+    font-size: 1.3vw;
+    margin-left: 5vw;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.item {
+    width: 90vw;
+    margin-top: 3vw;
+}
+
+.sides {
+    width: 25vw;
+    height: 15vw;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+
+.front,
+.back {
+    width: 25vw;
+    height: 15vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: 0.5s;
+}
+
+.sides img {
+    width: 25vw;
+    height: 15vw;
+}
+
+.sides .back {
+    transform: rotateY(180deg);
+}
+
+.sides:hover .front {
+    transform: rotateY(180deg);
+}
+
+.sides:hover .back {
+    transform: rotateY(360deg);
+}
+
+.text {
+    width: 50vw;
+    float: left;
+    margin-left: 5vw;
+}
+
+.text ul {
+    list-style-type: disc;
+    padding-left: 3vw;
+}
+
+.mark {
+    position: absolute;
+    top: 1vw;
+    left: 0vw;
+    width: 15vw;
+    background-color: #9F0101;
+    color: #FFF;
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 1vw;
+}
+
+.other_name {
+    position: absolute;
+    top: 4vw;
+    left: 0vw;
+    width: 11vw;
+    background-color: #2A2828;
+    color: #FFF;
+    font-size: 1.1vw;
+    font-weight: bold;
+    padding-left: 1vw;
+}
+
+.price {
+    position: absolute;
+    top: 10vw;
+    left: 11vw;
+    width: 14vw;
+    background-color: #FFF;
+    color: #9F0101;
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer ul {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    font-size: 1vw;
+    padding: 0;
+    color: #CAC4C4;
+    background-color: #2B2B2B;
+    margin-bottom: 0vw;
+    padding-bottom: 1vw;
+}
+
+.footer li {
+    width: 25vw;
+}
+
+.footer i {
+    margin-right: 1vw;
+}
+
+.footer tr {
+    vertical-align: top;
+}
+
+.footer img {
+    width: 3vw;
+    margin: auto;
+}
+
+.footer li:last-child a,
+.footer li:last-child h3 {
+    padding-left: 1vw;
+}
+
+.footer p>a {
+    text-decoration: underline;
+    color: #CAC4C4;
+}
+
+.footer p>a:hover {
+    text-decoration: none;
+}
+
+.footer p>a:not(:last-child):after {
+    content: '';
+    display: inline;
+    border-right: solid 1px;
+    padding-right: 1vw;
+}
+
+.end {
+    text-align: center;
+    font-size: 1vw;
+    color: #CAC4C4;
+    background-color: #212121;
+    line-height: 2vw;
+}
